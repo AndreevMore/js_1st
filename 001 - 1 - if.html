@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Тег meta для указания кодировки -->
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+
+  <script>
+    var login = prompt('Кто пришел?','');
+
+    if (!login) {
+      alert('Вход отменен');
+    } else if (login == 'PHP' || login == 'php') {
+      alert('Нет не стоит');
+    } else if (login == 'js' || login == 'JavaScript' || login == 'JS'  || login == 'javascript') {
+        var pass = prompt('Пароль?', '');
+        if (!pass){
+          alert('Вход отменен');
+        } else if (pass == 'ECMA' || pass == 'ecma'){
+          alert('Hellcome to Well Sinners');
+          location.href = 'https://media.giphy.com/media/ZsJTrVkZLkSRy/giphy.gif';
+        } else {
+          alert ('Пароль не верен!');
+        }
+    } else {
+      alert('Да что ты такое');
+    }
+  </script>
+
+</body>
+
+</html>

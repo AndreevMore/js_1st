@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Тег meta для указания кодировки -->
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+
+
+  <script>
+
+  var passChecker = function(pass){
+    switch(pass){
+      case '':
+        alert('Вход отменен');
+        break;
+      case 'ecma':
+        alert('Hellcome to Well Sinners');
+        location.href = 'https://media.giphy.com/media/ZsJTrVkZLkSRy/giphy.gif';
+        break;
+      default:
+        alert('Пароль не верен');
+    }
+  }
+
+  var loginChecker = function(login){
+  switch (login.toLowerCase()){
+    case '':
+      alert('Вход отменен');
+      break;
+    case 'php':
+      alert('Не стоит');
+      break;
+    case 'js':
+      var pass = prompt('Пароль?', '');
+      passChecker(pass);
+      break;
+    default:
+      alert( 'Да что ты такое' );
+    }
+  }
+
+  var login = prompt('Кто пришел?','');
+  loginChecker(login);
+
+  </script>
+
+
+</body>
+
+</html>

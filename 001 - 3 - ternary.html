@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Тег meta для указания кодировки -->
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+
+  <script>
+	var showPassPrompt = function (){
+		var pass = prompt('Пароль?', '');
+		var message = (pass == 'ecma') ? 'Hellcome to Well Sinners' : (!pass) ? 'Вход отменен' : 'Пароль не верен';
+		alert (message);
+	}
+
+	var login = prompt('Кто пришел?','');
+	var message = (login == 'js') ? showPassPrompt() : (login == 'php') ? alert('Не стоит') : (login == '') ? alert('Вход отменен') : alert('Да что ты такое');
+
+   </script>
+
+ </body>
+
+</html>
